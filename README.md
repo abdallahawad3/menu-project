@@ -18,7 +18,7 @@ This is a menu project built using React and React Bootstrap. The project featur
 
 ### Live Preview
 
-You can view a live preview of the project at the following URL: [https://static-menuapp-v1.netlify.app/](https://static-menuapp-v1.netlify.app/)
+You can view a live preview of the project at the following URL: [https://static-menuapp-v1.netlify.app/](https://static-menu-app.netlify.app/)
 
 ### Installation and Setup
 
