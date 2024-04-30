@@ -1,0 +1,13 @@
+import  b1  from "./b1.jpg";
+import  b2  from "./b2.jpg";
+import  b3  from "./b3.jpg";
+import  b4  from "./b4.jpg";
+import  d1  from "./d1.jpg";
+import  d2  from "./d2.jpg";
+import  d3  from "./d3.jpg";
+import  l1  from "./l1.jpg";
+import  l2  from "./l2.jpg";
+import  l3  from "./l3.jpg";
+import  l4  from "./l4.jpg";
+import  l5  from "./l5.jpg";
+export {b1,b2 ,b3 ,b4 ,d1 ,d2 ,d3 ,l1 ,l2 ,l3 ,l4 ,l5};
