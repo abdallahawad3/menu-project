@@ -1,7 +1,12 @@
-import React from 'react'
-import { Button, Container, Form, Nav, NavDropdown, Navbar } from 'react-bootstrap'
+import React, { useState } from 'react'
+import { Button, Container, Form, Nav, Navbar } from 'react-bootstrap'
 
-const NavBar = () => {
+const NavBar = ({searchMeal}) => {
+
+  const [word,setWord] = useState("");
+  function searchForMeal(word){
+    searchMeal(word.toLowerCase());
+  }
   return (
     <Navbar className='navbar' expand="lg" style={{background:"#153448 !important"}} >
       <Container className='py-2 ' >
@@ -20,8 +25,16 @@ const NavBar = () => {
               placeholder="Search"
               className="me-2"
               aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
+              value={word}
+              onChange={(e)=>{
+              setWord(e.target.value);
+            }}
+           />
+            <Button onClick={(e)=>{
+              e.preventDefault();
+              searchForMeal(word);
+              setWord("");
+            }} variant="outline-success">Search</Button>
           </Form>
         </Navbar.Collapse>
       </Container>

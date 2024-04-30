@@ -1,18 +1,21 @@
 import React from 'react'
-import { Button, Card } from 'react-bootstrap'
-import { b1 } from '../assets'
+import {  Card } from 'react-bootstrap'
+
 
 const MyCard = ({title,description,price,img}) => {
   return (
     <>
-    <Card >
+    <Card className='scale-up-center' >
         <Card.Img className='img-width' variant="top" src={img} />
         <Card.Body>
+          <div className='d-flex justify-content-between'>
           <Card.Title>{title}</Card.Title>
+          <p className='text-danger'>Price: {price}$</p>
+          </div>
           <Card.Text>
             {description}
           </Card.Text>
-          <p variant="primary">Price: {price }</p>
+          
         </Card.Body>
     </Card>
     </>
