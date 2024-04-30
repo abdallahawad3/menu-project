@@ -8,8 +8,7 @@ const Filtration = ({filter,category}) => {
   <Button 
     key={Math.random()*10} 
     onClick={()=>{
-      finalData(e.toLowerCase())
-    }} 
+      finalData(e.toLowerCase())}} 
     className='btn-filtration' 
     variant="outline-primary">
       {e.toUpperCase()}
@@ -24,11 +23,7 @@ const Filtration = ({filter,category}) => {
       <div>
         <h1>Food List</h1>
       </div>
-      <div className='all-btn d-flex justify-content-center  gap-2 '>
-        {/* <Button onClick={()=>{finalData("all")}} className='btn-filtration' variant="outline-primary">All</Button>
-        <Button onClick={()=>{finalData("breakfast")}}  className='btn-filtration' variant="outline-primary">Breakfast</Button>
-        <Button onClick={()=>{finalData("lunch")}}  className='btn-filtration' variant="outline-primary">Lunch</Button>
-        <Button onClick={()=>{finalData("dinner")}}  className='btn-filtration' variant="outline-primary">Dinner</Button> */}
+      <div className='all-btn d-flex justify-content-center gap-2 flex-wrap'>
         {buttonCategory}
       </div>
     </div>
